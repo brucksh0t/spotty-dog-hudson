@@ -17,7 +17,7 @@
   function compute(n){var c=CLOSE[n.day];
     if(n.min>=OPEN*60&&n.min<c*60)return {c:'later',t:'Usually open until about '+h12(c)+' today.'};
     if(n.min<OPEN*60)return {c:'later',t:'Usually opens at noon today, until about '+h12(c)+'.'};
-    var d=(n.day+1)%7;return {c:'closed',t:'Usually closed by now (closing times are “ish”). Opens tomorrow, '+N[d]+', at noon.'};}
+    if(n.ts>=Date.parse('2026-10-24T23:00:00Z')&&n.ts<Date.parse('2026-10-25T01:00:00Z'))return {c:'later',t:'Tonight’s 7 PM reading is scheduled; usual hours end about 8 PM.'};var d=(n.day+1)%7;return {c:'closed',t:'Usually closed by now (closing times are “ish”). Opens tomorrow, '+N[d]+', at noon.'};}
   var n=now(),r=compute(n);
   var row=document.querySelector('[data-today-hours]');
   if(row){row.querySelector('.dot').className='dot dot--'+r.c;row.querySelector('[data-text]').innerHTML=r.t+' Call to confirm: <a href="tel:+15186716006">518-671-6006</a>';}
