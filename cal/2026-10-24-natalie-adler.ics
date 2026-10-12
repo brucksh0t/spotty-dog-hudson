@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Spotty Dog concept//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:2026-10-24-natalie-adler@spotty-dog-concept
+DTSTAMP:20261012T110000Z
+DTSTART:20261024T230000Z
+DTEND:20261025T003000Z
+SUMMARY:Natalie Adler reads "Waiting on a Friend", with Dave King
+LOCATION:The Spotty Dog Books & Ale, 440 Warren St, Hudson, NY 12534
+DESCRIPTION:Author event listed at https://www.thespottydog.com/events/all-events/ (end time is an estimate; call 518-671-6006).
+END:VEVENT
+END:VCALENDAR
