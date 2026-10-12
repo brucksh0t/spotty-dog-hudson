@@ -19,7 +19,7 @@
   <div class="nav__in">
     <a class="brand" href="#top" aria-label="The Spotty Dog, back to top"><img src="img/favicon.png" alt="" width="32" height="32"><span>The Spotty Dog</span></a>
     <nav class="nav__links" aria-label="Main"><a href="#today">Today</a><a href="#events">Events</a><a href="#taps">On tap</a><a href="#shop">Shop</a><a href="#history">Firehouse</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn--primary btn--hdr" href="#visit">PLAN A VISIT</a>
+    <a class="btn btn--outline-light btn--hdr" href="#visit">PLAN A VISIT</a>
   </div>
   <nav class="strip" aria-label="Sections"><a href="#today">Today</a><a href="#events">Events</a><a href="#taps">On tap</a><a href="#shop">Shop</a><a href="#history">Firehouse</a><a href="#visit">Visit</a></nav>
 </header>
@@ -31,7 +31,7 @@
       <p class="kicker">440 Warren Street · Hudson, NY · Books &amp; Ale since 2005</p>
       <h1 id="hero-h">Today at the Spotty</h1>
       <ul class="today">
-        <li class="today__row" data-today-hours><span class="dot dot--closed" aria-hidden="true"></span><span><b>Hours</b> <span data-text>Mon–Tue 12–5ish · Wed–Sat 12–8ish · Sun 12–6ish</span></span></li>
+        <li class="today__row" data-today-hours><span class="dot dot--closed" aria-hidden="true"></span><span><b>Hours</b> <span data-text>Hours vary. <a href="tel:+15186716006">Call to confirm.</a></span></span></li>
         <li class="today__row" data-today-event><span class="dot dot--later" aria-hidden="true"></span><span><b>Next event</b> <span data-text>Sat, Oct 24, 7 PM: Natalie Adler reads <i>Waiting on a Friend</i>, with Dave King</span></span></li>
         <li class="today__row"><span class="dot dot--plain" aria-hidden="true"></span><span><b>On tap</b> 12 taps, rotated often. Ask about tonight’s.</span></li>
       </ul>
@@ -88,12 +88,16 @@
 </section>
 
 <section class="history" id="history" aria-labelledby="hi-h">
-  <div class="wrap hist">
-    <div class="hist__media" data-scrub><figure class="then"><picture><source type="image/webp" srcset="img/firehouse-history-800.webp 800w, img/firehouse-history-1500.webp 1500w" sizes="(min-width:900px) 560px, 92vw"><img class="framed" src="img/firehouse-history.jpg" alt="A historic photograph of the C.H. Evans Hook &amp; Ladder company posed in front of the firehouse." width="1500" height="1320" loading="lazy" decoding="async"></picture><figcaption><b>Then</b> The Hook &amp; Ladder company at the firehouse. Historic photograph, photographer unknown, via thespottydog.com/history.</figcaption></figure><figure class="now"><picture><source type="image/webp" srcset="img/storefront-800.webp 800w, img/storefront-1500.webp 1500w" sizes="(min-width:900px) 560px, 92vw"><img class="framed" src="img/storefront.jpg" alt="The same firehouse today: the Spotty Dog’s brick storefront on Warren Street." width="1500" height="1003" loading="lazy" decoding="async"></picture><figcaption><b>Now</b> The same building on Warren Street, the Spotty Dog since 2005. Photo: FX Schram Photography.</figcaption></figure></div>
-    <div>
-      <p class="kicker kicker--dark">The firehouse</p>
-      <h2 id="hi-h" class="disp">Built 1889. Pouring since 2005.</h2>
-      <p>The C.H. Evans Hook &amp; Ladder firehouse went up in 1889, designed by architect Michael O’Connor. It was named for Cornelius H. Evans, the brewer behind Evans Cream Ale and mayor of Hudson from 1868 to 1872.</p>
+  <div class="wrap hist" data-scrub-pin>
+    <div class="hist__pin">
+      <div class="hist__head">
+        <p class="kicker kicker--dark">The firehouse</p>
+        <h2 id="hi-h" class="disp">Built 1889. Pouring since 2005.</h2>
+        <p>The C.H. Evans Hook &amp; Ladder firehouse went up in 1889, designed by architect Michael O’Connor. It was named for Cornelius H. Evans, the brewer behind Evans Cream Ale and mayor of Hudson from 1868 to 1872.</p>
+      </div>
+      <div class="hist__media" data-scrub><span class="wipe-line" aria-hidden="true"></span><figure class="then"><picture><source type="image/webp" srcset="img/firehouse-history-800.webp 800w, img/firehouse-history-1500.webp 1500w" sizes="(min-width:900px) 620px, 92vw"><img class="framed" src="img/firehouse-history.jpg" alt="A historic photograph of the C.H. Evans Hook &amp; Ladder company posed in front of the firehouse." width="1500" height="1320" loading="lazy" decoding="async"></picture><figcaption><b>Then</b> The Hook &amp; Ladder company at the firehouse. Historic photograph, photographer unknown, via thespottydog.com/history.</figcaption></figure><figure class="now"><picture><source type="image/webp" srcset="img/storefront-800.webp 800w, img/storefront-1500.webp 1500w" sizes="(min-width:900px) 620px, 92vw"><img class="framed" src="img/storefront.jpg" alt="The same firehouse today: the Spotty Dog’s brick storefront on Warren Street." width="1500" height="1003" loading="lazy" decoding="async"></picture><figcaption><b>Now</b> The same building on Warren Street, the Spotty Dog since 2005. Photo: FX Schram Photography.</figcaption></figure></div>
+    </div>
+    <div class="hist__more">
       <p>The company kept the building until Hudson’s companies consolidated in 2002, partly because it bought a truck too large to fit in the firehouse. The original mahogany mantle and bronze chandelier are still upstairs. Since 2005 it has been the Spotty Dog, run by “a bonafide descendant of the Evans’ clan.”</p>
       <div class="btns"><a class="btn btn--outline" href="https://www.thespottydog.com/history/" target="_blank" rel="noopener">FULL HISTORY</a></div>
     </div>
@@ -120,7 +124,7 @@
 </main>
 
 <footer class="foot">
-  <p><a href="https://www.facebook.com/SpottyDogBooks" target="_blank" rel="noopener">Facebook</a><a href="https://www.thespottydog.com/" target="_blank" rel="noopener">Current site</a><a href="CREDITS.md">Credits</a></p>
+  <p><a href="https://www.facebook.com/SpottyDogBooks" target="_blank" rel="noopener">Facebook</a><a href="https://www.thespottydog.com/" target="_blank" rel="noopener">Current site</a><a href="credits.html">Credits</a></p>
   <p>Concept preview · not affiliated with The Spotty Dog Books &amp; Ale. Photos: FX Schram Photography and the store’s archive, via thespottydog.com.</p>
 </footer>
 
