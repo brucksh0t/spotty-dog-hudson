@@ -134,7 +134,7 @@ address{font-style:normal;font-size:1.2rem}
 .hist__media.is-scrub figcaption{grid-row:2;opacity:1}
 .hist__media.is-scrub .then figcaption{grid-column:1}.hist__media.is-scrub .now figcaption{grid-column:2}
 .hist__media.is-scrub figure+figure{margin-top:0}
-@media (min-width:900px){.hist__media:not(.is-scrub){display:grid;grid-template-columns:1fr 1fr;gap:1rem}.hist__media:not(.is-scrub) figure+figure{margin-top:0}.hist__media:not(.is-scrub) .framed{aspect-ratio:3/2;object-position:50% 30%}}
+@media (min-width:900px){.hist__media:not(.is-scrub){display:grid;grid-template-columns:1fr;gap:1.2rem}.hist__media:not(.is-scrub) figure+figure{margin-top:0}.hist__media:not(.is-scrub) .framed{aspect-ratio:3/2;object-position:50% 30%}}
 
 /* history layout: copy + then/now; at >=900 image left, story right, pinned together */
 .hist__head p+p,.hist__more p+p{margin-top:.8rem}
@@ -156,3 +156,9 @@ address{font-style:normal;font-size:1.2rem}
   .hist__media.is-scrub figcaption{font-size:.85rem}
 }
 @media (max-width:379px){.hist.is-scrub .hist__head p:not(.kicker){font-size:1rem;line-height:1.5}.hist.is-scrub .hist__head .kicker{margin-bottom:.3rem}}
+
+/* DD3: one filled button per first screen below 900px; hero PLAN A VISIT becomes outline (CSS only) */
+@media (max-width:899px){
+  .hero .btn--primary{background:transparent;border-color:#fff;color:#fff;text-transform:uppercase;text-decoration:none;min-height:54px}
+  .hero .btn--primary:hover{background:#fff;border-color:#fff;color:var(--ink)}
+}
