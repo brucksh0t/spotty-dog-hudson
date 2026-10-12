@@ -82,7 +82,7 @@ address{font-style:normal;font-size:1.2rem}
 .hours th,.hours td{text-align:left;padding:.45rem .3rem;border-bottom:1px solid #3a3835;font-size:1rem}
 .hours th{font-family:var(--disp);font-weight:700}
 .hours th{white-space:nowrap}.hours td{white-space:nowrap}
-.hours tr.today{background:#2d2b28}
+.hours tr.is-today{background:#2d2b28}
 .today-tag{display:inline-block;margin-left:.6rem;font-family:var(--disp);font-weight:700;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#f0b95a;vertical-align:middle}
 .foot{background:#0d0d0d;color:#d8d0c2;padding:2.5rem 5vw;text-align:center;font-size:1rem;display:grid;gap:.3rem}
 .foot p:first-child{display:flex;gap:1.5rem;justify-content:center}

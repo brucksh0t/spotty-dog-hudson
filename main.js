@@ -26,7 +26,7 @@
     var ev=document.querySelector('[data-today-event] [data-text]');if(ev)ev.textContent='No upcoming event posted yet. Check the events page.';
     document.querySelector('[data-today-event] .dot').className='dot dot--closed';}
   var tr=document.querySelector('[data-hours] tr[data-day="'+n.day+'"]');
-  if(tr){tr.classList.add('today');var td=tr.querySelector('td'),tag=document.createElement('span');tag.className='today-tag';tag.textContent='Today';td.appendChild(tag);}
+  if(tr){tr.classList.add('is-today');var td=tr.querySelector('td'),tag=document.createElement('span');tag.className='today-tag';tag.textContent='Today';td.appendChild(tag);}
   // One filled primary per screen: the hero PLAN A VISIT while it is visible; otherwise the header (desktop) or DIRECTIONS bar (mobile).
   var hero=document.querySelector('.hero .btn--primary'),hdr=document.querySelector('.btn--hdr'),bar=document.querySelector('.mbar .btn--primary'),mq=matchMedia('(max-width:899px)'),vis=true;
   function sync(){var m=mq.matches;if(hdr)hdr.classList.toggle('btn--quiet',m||vis);if(bar)bar.classList.toggle('btn--quiet',vis);}
